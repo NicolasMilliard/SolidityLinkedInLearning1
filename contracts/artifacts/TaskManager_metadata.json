@@ -96,6 +96,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "premiums",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "upgradePlan",
 				"outputs": [],
@@ -131,11 +150,11 @@
 	},
 	"sources": {
 		"contracts/TaskManager.sol": {
-			"keccak256": "0x9a9d8d4e6e1d8883a48da1b64b98d9e30c1f9eabb7b04aef392ba2023c0f45d1",
+			"keccak256": "0x1d38f8e78d59aeadb87e7948edb1c9fedb5776d637967e20de2aae7211072765",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://197b105f693a7732235fa51770b258aadced69f421178e25f4265c9919c67070",
-				"dweb:/ipfs/QmRBT6YJN7rmKk3eUPg7M3mw6nMe7mFHUG66G3fWiK9xCm"
+				"bzz-raw://612e7c0764f3fa33bfd240f38287056e3d5e5f5c856c847764abf4b5a3220da9",
+				"dweb:/ipfs/QmS8WptS6GPkmw73WYDFhy3nVdpP8UMnietm3KTJ8QCyqc"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol": {

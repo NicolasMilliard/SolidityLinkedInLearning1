@@ -25,7 +25,7 @@ contract TaskManager {
     uint private count;
 
     mapping(uint => Task) tasks;
-    mapping(address => bool) premiums;
+    mapping(address => bool) public premiums;
     // event est utile lors de l'utilisation d'un smart contract avec une UI (permet d'avoir des notifications)
     event NewTask(Task task, uint time);
 
@@ -59,8 +59,9 @@ contract TaskManager {
         return count;
     }
 
+    // on vérifie qu'il y a 10 tâches au maximum ou que l'adresse est déjà enregistrée comme premium
     modifier isPremium() {
-        require(count + 1 <= 10, 'Please upgrade to add more than 10 tasks.');
+        require(count + 1 <= 10 || premiums[msg.sender], 'Please upgrade to add more than 10 tasks.');
         _;
     }
 }
