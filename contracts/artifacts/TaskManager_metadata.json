@@ -81,6 +81,26 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTasksCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "countTasks",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "upgradePlan",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -111,11 +131,19 @@
 	},
 	"sources": {
 		"contracts/TaskManager.sol": {
-			"keccak256": "0x5953bb24137f598d2ba285299fd40fe50d73f277911f750e5a45c6d465321113",
+			"keccak256": "0x9a9d8d4e6e1d8883a48da1b64b98d9e30c1f9eabb7b04aef392ba2023c0f45d1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://8ab7d5e5dbaa0b2e16ad56aeceed92a0e61d3da166c05514c4782bc54395a849",
-				"dweb:/ipfs/QmSSDhpa7v1LohHtJCdBWL4V7QEMJTEyjqwcTH5vmXkehU"
+				"bzz-raw://197b105f693a7732235fa51770b258aadced69f421178e25f4265c9919c67070",
+				"dweb:/ipfs/QmRBT6YJN7rmKk3eUPg7M3mw6nMe7mFHUG66G3fWiK9xCm"
+			]
+		},
+		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol": {
+			"keccak256": "0x0f633a0223d9a1dcccfcf38a64c9de0874dfcbfac0c6941ccf074d63a2ce0e1e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://864a40efcffdf408044c332a5aa38ec5618ed7b4eecb8f65faf45671bd6cdc65",
+				"dweb:/ipfs/QmQJquTMtc6fgm5JQzGdsGpA2fqBe3MHWEdt2qzaLySMdN"
 			]
 		}
 	},

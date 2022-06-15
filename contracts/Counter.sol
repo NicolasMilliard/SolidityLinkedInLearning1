@@ -20,7 +20,7 @@ contract Counter {
         // require prend 2 paramètres : la condition et le message d'erreur
         require(value <= 10, 'value cannot be more than 10.');
         
-        // _; correspond à l'éxécution de la fonction
+        // _; correspond à l'éxécution de ce modifier
         _;
     }
 }
