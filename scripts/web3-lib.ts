@@ -6,7 +6,7 @@ import { Contract, ContractSendMethod, Options } from 'web3-eth-contract'
  * @param {string} contractName name of the contract to deploy
  * @param {Array<any>} args list of constructor' parameters
  * @param {string} from account used to send the transaction
- * @param {number} gas gas limit
+ * @param {number} gas gas limit 
  * @return {Options} deployed contract
  */
 export const deploy = async (contractName: string, args: Array<any>, from?: string, gas?: number): Promise<Options> => {

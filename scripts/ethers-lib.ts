@@ -5,7 +5,7 @@ import { ethers } from 'ethers'
  * @param {string} contractName name of the contract to deploy
  * @param {Array<any>} args list of constructor' parameters
  * @param {Number} accountIndex account index from the exposed account
- * @return {Contract} deployed contract
+ * @return {Contract} deployed contract 
  */
 export const deploy = async (contractName: string, args: Array<any>, accountIndex?: number): Promise<ethers.Contract> => {    
 

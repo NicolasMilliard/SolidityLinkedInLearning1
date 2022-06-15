@@ -6,7 +6,7 @@ describe("Storage", function () {
   it("test initial value", async function () {
     const Storage = await ethers.getContractFactory("Storage");
     const storage = await Storage.deploy();
-    await storage.deployed();
+    await storage.deployed(); 
     console.log('storage deployed at:'+ storage.address)
     expect((await storage.retrieve()).toNumber()).to.equal(0);
   });
