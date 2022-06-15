@@ -1,0 +1,328 @@
+{
+	"id": "03a53652dba552ecd9eba04979a4a359",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/TaskManager.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >= 0.7.0 < 0.9.0;\r\n\r\ncontract TaskManager {\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/TaskManager.sol": {
+				"TaskManager": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/TaskManager.sol\":76:107  contract TaskManager {\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/TaskManager.sol\":76:107  contract TaskManager {\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212201892637e97cd673ff5315f2227c94c7398b4a4cf97cc3fee512411b48c492e1964736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212201892637e97cd673ff5315f2227c94c7398b4a4cf97cc3fee512411b48c492e1964736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 XOR SWAP3 PUSH4 0x7E97CD67 EXTCODEHASH CREATE2 BALANCE 0x5F 0x22 0x27 0xC9 0x4C PUSH20 0x98B4A4CF97CC3FEE512411B48C492E1964736F6C PUSH4 0x43000807 STOP CALLER ",
+							"sourceMap": "76:31:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212201892637e97cd673ff5315f2227c94c7398b4a4cf97cc3fee512411b48c492e1964736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 XOR SWAP3 PUSH4 0x7E97CD67 EXTCODEHASH CREATE2 BALANCE 0x5F 0x22 0x27 0xC9 0x4C PUSH20 0x98B4A4CF97CC3FEE512411B48C492E1964736F6C PUSH4 0x43000807 STOP CALLER ",
+							"sourceMap": "76:31:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 76,
+									"end": 107,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212201892637e97cd673ff5315f2227c94c7398b4a4cf97cc3fee512411b48c492e1964736f6c63430008070033",
+									".code": [
+										{
+											"begin": 76,
+											"end": 107,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 76,
+											"end": 107,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 76,
+											"end": 107,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 76,
+											"end": 107,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 76,
+											"end": 107,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 76,
+											"end": 107,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/TaskManager.sol\":\"TaskManager\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/TaskManager.sol\":{\"keccak256\":\"0xbf2290dd387734c06f4cca316925cafebe807e4bd7c556950d5004526ee070ca\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://d3476c3b8193df792191cc431cc90f02c4a5a7f3d47f3fcbf409ded24f91b45a\",\"dweb:/ipfs/QmUEd63358UdiqC44DBBtVA51qhK6X1dFnaH9qqvUHhzt6\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/TaskManager.sol": {
+				"ast": {
+					"absolutePath": "contracts/TaskManager.sol",
+					"exportedSymbols": {
+						"TaskManager": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "39:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "TaskManager",
+							"nameLocation": "85:11:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "76:31:0",
+							"usedErrors": []
+						}
+					],
+					"src": "39:68:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

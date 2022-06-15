@@ -24,9 +24,12 @@ contract Units {
         timeLimit = block.timestamp + 5 seconds;
     }
 
-    function increment() public onlyAdmin {
+    // payable indique que cette fonction sera payante
+    function increment() public payable onlyAdmin {
         // on oblige l'utilisateur à attendre 5 secondes entre 2 appels sinon on affiche un message d'erreur
         require(block.timestamp > timeLimit, 'Please wait 5 seconds before submitting again.');
+        // on oblige l'utilisateur à payer au moins 2 wei
+        require(msg.value >= 2 wei, 'No sufficient funds available.');
         count++;
         start();
     }

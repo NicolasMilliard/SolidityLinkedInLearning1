@@ -27,7 +27,7 @@
 				"inputs": [],
 				"name": "increment",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -59,11 +59,11 @@
 	},
 	"sources": {
 		"contracts/Units.sol": {
-			"keccak256": "0xb175b8bfda1b47cc0c13cbd4f3e25c25c18000de0b2cc14c8146d01be8af2d7d",
+			"keccak256": "0x38bfafcd7e7521aad40038279523fd5722e6524ad9a1178fec85376d0cbaaadb",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://819226fabc3018fdf9b813de4403beae7c0568c9b25257658b22df370c6297d9",
-				"dweb:/ipfs/QmTQdmHMaS9j5PB5H1KC5mVkiayxJ47QrQ4tiShiMGJE7u"
+				"bzz-raw://20abcec3f1d0ed9f268fcd8139434a9bf5f4196001d8a7c7e13779a2bf2bc09e",
+				"dweb:/ipfs/QmTY3insPWux8TDp74vp6FQ8cFTavJxViKamR4RPx8j1ye"
 			]
 		}
 	},

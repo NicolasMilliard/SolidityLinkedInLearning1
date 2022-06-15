@@ -12,6 +12,7 @@ contract Hello {
         message = "I was here!";
     }
 
+    // memory indique qu'on stocke la variable temporairement et non dans le smart contract comme pour les autres variables
     function store(string memory _message) public {
         message = _message;
     }

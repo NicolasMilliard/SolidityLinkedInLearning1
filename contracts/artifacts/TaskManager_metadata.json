@@ -1,0 +1,123 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum TaskManager.Priority",
+								"name": "priority",
+								"type": "uint8"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "completed",
+								"type": "bool"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct TaskManager.Task",
+						"name": "task",
+						"type": "tuple"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "time",
+						"type": "uint256"
+					}
+				],
+				"name": "NewTask",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					}
+				],
+				"name": "addTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_count",
+						"type": "uint256"
+					}
+				],
+				"name": "completeTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/TaskManager.sol": "TaskManager"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/TaskManager.sol": {
+			"keccak256": "0x5953bb24137f598d2ba285299fd40fe50d73f277911f750e5a45c6d465321113",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8ab7d5e5dbaa0b2e16ad56aeceed92a0e61d3da166c05514c4782bc54395a849",
+				"dweb:/ipfs/QmSSDhpa7v1LohHtJCdBWL4V7QEMJTEyjqwcTH5vmXkehU"
+			]
+		}
+	},
+	"version": 1
+}
